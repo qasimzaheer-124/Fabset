@@ -1,0 +1,78 @@
+@media only screen and (max-width: 769px) {
+    html {
+        font-size: 11px;
+    }
+
+    header{
+        padding: 0.5rem;
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #sign {
+        font-weight: 800;
+    }
+
+    .ham-menu {
+        display: block;
+        height: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .ham-menu:hover {
+        cursor: pointer;
+    }
+
+    .ham-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .ham-menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #navbar {
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 2.4rem;
+        gap: 0;
+        background-color: var(--light-orange);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 14px 0;
+    }
+
+    #navbar.active {
+        left: 0;
+        padding: 0;
+    }
+
+    #services {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .card {
+        width: 18rem;
+    }
+
+    #services {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "head head" "card1 card2" "card3 card4";
+    }
+}

@@ -1,0 +1,18 @@
+.grid-item1 {
+    grid-area: head;
+}
+.grid-item2 {
+    grid-area: card1;
+}
+
+.grid-item3 {
+    grid-area: card2;
+}
+
+.grid-item4 {
+    grid-area: card3;
+}
+
+.grid-item5 {
+    grid-area: card4;
+}

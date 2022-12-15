@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab','Montserrat', monospace;
+    font-weight: 500;
+    margin: 0;
+}
+
+:root {
+    --white: #fcecdd;
+    --light-orange: #ffc288;
+    --dark-orange: #fea82f;
+    --primary: #ff6701;
+    --black: #222222;
+}
+
+header {
+    background-color: var(--dark-orange);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#navbar li {
+    list-style-type: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    transition: text-decoration 0.5s ease;
+}
+
+#navbar li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.4rem;
+}
+
+#sign {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    transition: text-decoration 0.5s ease;
+}
+
+#sign:hover {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.4rem;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+#logo a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#logo span {
+    color: var(--white);
+}
+
+#hero {
+    background-image: url("/img/hero-banner.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+}
+
+#hero div {
+    position: relative;
+    top: 12rem;
+    margin: 0 auto 0.5em auto;
+    text-align: center;
+}
+
+#hero div h1 {
+    font-size: 3.5rem;
+    margin: 0 auto;
+    color: var(--primary);
+}
+
+#hero div button {
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 0.9rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#hero div button:hover {
+    background-color: hsl(24, 100%, 59%);
+}
+
+#recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/img/post.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#recent h2 {
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+}
+
+#recent button {
+    color: var(--primary);
+    background-color: var(--white);
+    border: none;
+    border-radius: 2rem;
+    font-size: medium;
+    font-weight: 600;
+    padding: 0.9rem 1.4rem;
+    cursor: pointer;
+}
+
+#recent button:hover {
+    color: var(--white);
+    background-color: hsl(24, 100%, 59%);
+}
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 4rem 0;
+    background-color: var(--primary);
+    grid-template-areas: ". head head ." "card1 card2 card3 card4";
+}
+#services h2 {
+    text-align: center;
+}
+
+.grid-item1 {
+    grid-area: service-head;
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+}
+
+footer {
+    background-color: var(--dark-orange);
+}
+
+#foot-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+footer p {
+    text-align: center;
+    margin: 0%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div ul li {
+    list-style-type: none;
+    margin: 0.5rem 0;
+}
+
+footer div ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer div ul li a:hover {
+    color: var(--primary);
+}
+
+.card {
+    color: var(--black);
+    background-color: var(--light-orange);
+    padding: 1rem 2rem;
+    height: 11rem;
+    width: 16rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px 2px hsl(0, 0%, 27%);
+}
+
+.service-icons {
+    height: 3rem;
+    width: 3rem;
+}
+
+.social-icons {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.2rem 0;
+}
+
+.social-icons:hover {
+    transform: scale(1.2, 1.2);
+    filter: brightness(200%);
+}
+.ham-menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white );
+}
+
+.form-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/img/vecteezy_vector-abstract-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.form {
+    width: 28rem;
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 1rem;
+    border: 4px solid var(--light-orange);
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 0 2rem;
+}
+.form h1 {
+    text-align: center;
+}
+.form label {
+    display: none;
+}
+
+.form input {
+    display: block;
+    margin: 2.5rem auto;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    font-size: 0.9rem;
+}
+
+.form input:focus {
+    border: none;
+    border-bottom: 2px solid var(--dark-orange);
+    outline: none;
+}
+
+.form input[type="date"] {
+    color: #7a7a7a;
+}
+
+#signup {
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--dark-orange);
+    color: var(--black);
+    font-size: 1.4rem;
+    margin: 1.5rem auto 1.5rem auto;
+    cursor: pointer;
+    font-family: 'Roboto Slab';
+}
+#signup:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
