@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<Section id="contact-form">
+    <div>
+        <h2>Contact Us</h2>
+        <h3>Contact For Any Query</h3>
+    </div>
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+        <label for="username">Username</label>
+        <input id="firstname" type="text" name="firstname" placeholder="Enter your name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter Email address" required>
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject" placeholder="Type subject" required>
+        <label for="msg">Message</label>
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Type..." required></textarea>
+        <input class="send" type="submit" name="send" id="send-msg" value="Send Message">
+    </form>
+</Section>
+<section id="contact-info">
+    <div>
+        <h3>Directions & Contact Info</h3>
+        <ul>
+            <li style="list-style-image: url('/img/phone.svg');"><p>Phone: +012 345 67890</p></li>
+            <li style="list-style-image: url('/img/email.svg');"><p>Email: info@example.com</p></li>
+            <li style="list-style-image: url('/img/location.svg');"><p>Address: 123 Street, New York, USA</p></li>
+        </ul>
+    </div>
+    <div>
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(FabSet)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.maps.ie/distance-area-calculator.html">
+                measure area map
+            </a>
+        </iframe>
+    </div>
+</section>
