@@ -4,36 +4,40 @@
 @{
     Layout = "_layout";
 }
-<section id="hero">
-    <div>
-        <h1>Let's Explore Fashion</h1>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Provident eveniet, ipsum iure explicabo magni velit atque nesciunt in eius nam dolorem quidem vel
-            soluta,
-            exercitationem odio praesentium qui, error inventore.
-        </p>
-        <button>Explore</button>
+<section class="main">
+    <div class="wrapper">
+        <div class="slide">
+            <img src="~/img/slide1.jpg" alt="" name="slide" class="image">
+            <div class="image-date">
+                <h2>
+                    Let's Explore Fashion
+                </h2>
+                <span class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aspernatur, ducimus Obcaecati accusa aliquam et rerum.<br>
+                </span>
+                <a href="@Url.Action("Dresses","Home")" id="slider-btn">about us</a>
+            </div>
+        </div>
     </div>
 </section>
 <section id="services">
     <h2 class="grid-item1">Our services</h2>
-    <div class="card grid-item2">
+    <div class="s-card grid-item2">
         <img class="service-icons" src="~/img/shipping.svg" alt="">
         <h3>Free Shipping</h3>
         <p>Order over $100</p>
     </div>
-    <div class="card grid-item3">
+    <div class="s-card grid-item3">
         <img class="service-icons" src="~/img/gift.svg" alt="">
         <h3>Smart Gift Card</h3>
         <p>Buy $1000 to get card</p>
     </div>
-    <div class="card grid-item4">
+    <div class="s-card grid-item4">
         <img class="service-icons" src="~/img/payment.svg" alt="">
         <h3>Quick Payment</h3>
         <p>100% secure payment</p>
     </div>
-    <div class="card grid-item5">
+    <div class="s-card grid-item5">
         <img class="service-icons" src="~/img/support.svg" alt="">
         <h3>24/7 support</h3>
         <p>Quick support</p>

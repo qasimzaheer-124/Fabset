@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/css/grid-layout.css">
     <script src="https://kit.fontawesome.com/0f7cc92cd1.js" crossorigin="anonymous"></script>
     <script defer src="~/js/script.js"></script>
+    <script defer src="~/js/slider.js"></script>
     <title>Fabsat</title>
 </head>
 
@@ -19,9 +20,8 @@
             <label id="logo"><a href="@Url.Action("Index","Home")">Fab<span>Set</span></a></label>
             <ul id="navbar">
                 <li class="nav-item"><a href="@Url.Action("Index","Home")">Home</a></li>
-                <li class="nav-item"><a href="@Url.Action("Index","Home")">Dresses</a></li>
-                <li class="nav-item"><a href="@Url.Action("Index","Home")">Accessories</a></li>
-                <li class="nav-item"><a href="@Url.Action("Index","Home")">sale</a></li>
+                <li class="nav-item"><a href="@Url.Action("Dresses","Home")">Dresses</a></li>
+                <li class="nav-item"><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
             </ul>
             <div>
                 <a id="sign" href="@Url.Action("Signup","Home")">SignUp</a>

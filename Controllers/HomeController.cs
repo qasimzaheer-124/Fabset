@@ -12,5 +12,13 @@ namespace fabset_project.Controllers
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult Dresses()
+        {
+            return View();
+        }
     }
 }
